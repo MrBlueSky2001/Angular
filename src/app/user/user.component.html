@@ -1,0 +1,18 @@
+<section>
+    @if (estaLogado){
+        <p>Bienvenido, {{ username }}</p>
+        <img 
+        (click)="saludar()"
+        src="https://avatars.githubusercontent.com/u/94528762?v=4">
+    } @else {
+        <p>Inicia sesión</p>
+        <input (click)="cambiarEstado()" type="button" value="Iniciar sesión">
+    }
+    <app-games 
+    nombreUsuario={{username}}
+    (comunicadorEventoHP)="getFavourite($event)"
+    ></app-games>
+    @if (juegoFavorito!== ''){
+        <p>Tu juego favorito es {{juegoFavorito}}</p>
+    }
+</section>

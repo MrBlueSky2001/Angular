@@ -1,0 +1,10 @@
+h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(255, 0, 0);
+}
+
+div{
+    max-width: 500px;
+    font-size: 24px;
+    margin-left: 33.33%;
+}
